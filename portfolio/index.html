@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tejas Kawale - Software Developer Portfolio. MSc CA Graduate and Full-Stack Developer specializing in Java, Python, JavaScript, and Web Technologies.">
+    <title>Tejas Kawale | Software Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="blob-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                Tejas Kawale
+            </a>
+
+            <nav class="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link nav-btn">Contact Me</a>
+            </nav>
+
+            <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-navbar">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#timeline" class="mobile-nav-link">Timeline</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#contact" class="mobile-nav-link">Contact Me</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="welcome-tag">Welcome to my space</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Tejas Kawale</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        An ambitious MSc CA Graduate & Software Developer with hands-on internship experience in
+                        full-stack web and backend development. Passionate about writing clean, efficient code and
+                        building scalable digital solutions.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/tejas-kawale-571089350" target="_blank"
+                            rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:tejaskawale83@gmail.com" class="social-icon-link" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="https://github.com/tejaskawale997" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-glow-ring">
+                        <div class="avatar-container">
+                            <img src="assets/avatar.png" alt="Tejas Kawale Portrait" class="avatar-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-text">
+                    <h3>Turning complex algorithms into elegant user experiences.</h3>
+                    <p>
+                        I hold a Master's degree in Computer Applications (MSc CA) and a Bachelor's degree in Computer
+                        Science (BCS). Throughout my academic journey at MIT ACSC and practical internships, I've honed
+                        my skills in programming, database design, and web architecture.
+                    </p>
+                    <p>
+                        My experience spans core languages like Java and C, backend development using Python and PHP,
+                        and dynamic frontends using JavaScript, HTML5, and CSS3. I'm highly focused on relational (SQL)
+                        and non-relational (MongoDB) databases to manage data efficiently.
+                    </p>
+                    <div class="about-quick-info">
+                        <div class="info-item">
+                            <i data-lucide="graduation-cap" class="info-icon"></i>
+                            <div>
+                                <span class="info-label">Degree</span>
+                                <span class="info-value">MSc CA & BCS (CS)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin" class="info-icon"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Pune, India</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="languages" class="info-icon"></i>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value">English, Hindi, Marathi</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="mail" class="info-icon"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value"><a href="mailto:tejaskawale83@gmail.com" class="info-card-link" style="color: inherit; text-decoration: none;">tejaskawale83@gmail.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Academic Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Months Internships</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">9+</span>
+                        <span class="stat-label">Tech Stack Languages</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Passion for Coding</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section (Education & Experience) -->
+        <section id="timeline" class="timeline-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Timeline Item 1 (Technohacks Solutions) -->
+                <div class="timeline-item left scroll-reveal">
+                    <div class="timeline-dot">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2026 (2 Months)</span>
+                            <h3 class="timeline-title">Web Development Intern</h3>
+                            <h4 class="timeline-org">Technohacks EduTech / Solutions Pvt Ltd</h4>
+                        </div>
+                        <p class="timeline-body">
+                            Designed and developed responsive front-end pages and web utilities. Integrated backend
+                            scripts for processing data, improving user experience, and testing core features in dynamic
+                            environments.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 (MCS CA) -->
+                <div class="timeline-item right scroll-reveal">
+                    <div class="timeline-dot">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2024 - 2026</span>
+                            <h3 class="timeline-title">Master of Science in Computer Applications (MSc CA)</h3>
+                            <h4 class="timeline-org">MIT ACSC</h4>
+                        </div>
+                        <p class="timeline-body">
+                            Advanced coursework in Computer Applications, Database Management Systems, Software
+                            Engineering, and Advanced Java Programming. Graduated with key project work in full-stack
+                            architecture.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Advanced Java</span>
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 (Spark Foundation) -->
+                <div class="timeline-item left scroll-reveal">
+                    <div class="timeline-dot">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2024 (1 Month)</span>
+                            <h3 class="timeline-title">Web Development Intern</h3>
+                            <h4 class="timeline-org">The Spark Foundation</h4>
+                        </div>
+                        <p class="timeline-body">
+                            Built and successfully deployed web projects involving basic banking and transaction
+                            systems. Worked closely with HTML, CSS, JavaScript, and MySQL databases for basic financial
+                            app simulation.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 (BCS CS) -->
+                <div class="timeline-item right scroll-reveal">
+                    <div class="timeline-dot">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2020 - 2024</span>
+                            <h3 class="timeline-title">Bachelor of Computer Science (CS)</h3>
+                            <h4 class="timeline-org">MIT ACSC</h4>
+                        </div>
+                        <p class="timeline-body">
+                            Focused on foundations of Computer Science including Object-Oriented Programming in Java and
+                            C, Data Structures, Operating Systems, and Relational Databases.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Java</span>
+                            <span>C Programming</span>
+                            <span>SQL</span>
+                            <span>Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">Abilities</span>
+                <h2 class="section-title">My Skillset</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="skills-container">
+                <!-- Coding/Programming Category -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i data-lucide="code-2" class="category-icon"></i>
+                        <h3>Core Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C Language</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Category -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i data-lucide="layout" class="category-icon"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database/Data Category -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i data-lucide="database" class="category-icon"></i>
+                        <h3>Databases & Storage</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL (MySQL / Postgres)</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 0%" data-percent="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">Showcase</span>
+                <h2 class="section-title">Recent Projects</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="database">Databases</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid">
+                <!-- Project 1: Authentication System -->
+                <div class="project-card" data-category="web database" data-title="Authentication System"
+                    data-desc="A secure login, signup, and landing page portal with backend database verification and dynamic user session control."
+                    data-tags="PHP,HTML,JavaScript,CSS,SQL"
+                    data-images="https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/AS_landing_page.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/AS_Loginpage.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/AS_signuppage.png">
+                    <div class="project-img-wrapper">
+                        <img src="https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/AS_landing_page.png"
+                            alt="Authentication System Landing Page" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-links">
+                                <a href="https://github.com/tejaskawale997" target="_blank" rel="noopener noreferrer"
+                                    class="overlay-link-icon" aria-label="Github Repo"><i data-lucide="github"></i></a>
+                                <button class="overlay-link-icon open-gallery-btn"
+                                    aria-label="View Screenshot Gallery"><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-type">Web & Database</div>
+                        <h3 class="project-title">Authentication System</h3>
+                        <p class="project-desc">A secure login, signup, and landing page portal with backend database
+                            verification and dynamic user session control.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Bike Showroom Web Application -->
+                <div class="project-card" data-category="java web database" data-title="Bike Showroom Web Application"
+                    data-desc="Full-featured inventory and showroom management system for bicycles/motorcycles, supporting admin actions (adding new models, staff setup) and customer flows (registration, service booking, payments)."
+                    data-tags="HTML,CSS,MySQL,JavaScript,Java,React"
+                    data-images="https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Admin%20Login%20Complition.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Add%20New%20Bike.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Admin%20Login.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Customer%20Registration.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Customer%20Registed%20page.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Payment.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Sevicing%20Form.png,https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Staff%20Registration%20form.png">
+                    <div class="project-img-wrapper">
+                        <img src="https://raw.githubusercontent.com/tejaskawale997/Project-Images/main/Admin%20Login%20Complition.png"
+                            alt="Bike Showroom Web App" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-links">
+                                <a href="https://github.com/tejaskawale997" target="_blank" rel="noopener noreferrer"
+                                    class="overlay-link-icon" aria-label="Github Repo"><i data-lucide="github"></i></a>
+                                <button class="overlay-link-icon open-gallery-btn"
+                                    aria-label="View Screenshot Gallery"><i data-lucide="eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-type">Java, React & SQL</div>
+                        <h3 class="project-title">Bike Showroom Web Application</h3>
+                        <p class="project-desc">Full-featured inventory and showroom management system for
+                            bicycles/motorcycles, supporting admin actions and customer flows.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Info Cards -->
+                <div class="contact-info-cards">
+                    <div class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>Email Me</h3>
+                            <a href="mailto:tejaskawale83@gmail.com" class="info-card-link">tejaskawale83@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i data-lucide="linkedin"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/tejas-kawale-571089350" target="_blank"
+                                rel="noopener noreferrer" class="info-card-link">Tejas Kawale Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>Location</h3>
+                            <p class="info-card-text">Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">&copy; 2026 Tejas Kawale. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Gallery Modal -->
+    <div id="project-modal" class="project-modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <button class="gallery-nav prev" aria-label="Previous Image"><i
+                            data-lucide="chevron-left"></i></button>
+                    <div class="gallery-viewport">
+                        <img id="modal-image" src="" alt="Project Screenshot" class="modal-img">
+                    </div>
+                    <button class="gallery-nav next" aria-label="Next Image"><i
+                            data-lucide="chevron-right"></i></button>
+                    <div class="gallery-dots" id="gallery-dots"></div>
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title">Project Title</h3>
+                    <p id="modal-desc">Project details go here...</p>
+                    <div class="modal-tags" id="modal-tags"></div>
+                    <div class="modal-actions">
+                        <a href="https://github.com/tejaskawale997" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary" id="modal-github">
+                            <i data-lucide="github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <span id="toast-message">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
